@@ -2,10 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-}
-
 *,
 *::before,
 *::after {
@@ -15,31 +11,6 @@ html {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-h1, .not-figure {
-  margin-bottom: 40px;
-}
-
-h2, h3 {
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 40px;
-  width: 872px;
-}
-
-ul {
-  padding-left: 15px;
-}
-
-li {
-  margin-bottom: 20px;
-}
-
-li:last-child {
-  margin-bottom: 0;
 }
 
 img {
@@ -61,16 +32,20 @@ body {
 }
 
 .logo {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.links {
   margin-bottom: 50px;
 }
 
 .link {
   display: inline-block;
-  margin-bottom: 50px;
   padding: 24px 49px;
 }
 
-.module {
+.link:not(:last-child) {
   margin-right: 25px;
 }
 
@@ -80,28 +55,42 @@ body {
   width: 1170px;
 }
 
-.grey-block {
-  border-radius: 20px;
-  padding: 30px;
-  background-color: #f3f3f3;
+.title {
+  margin-top: 0;
   margin-bottom: 40px;
 }
 
-.grey-block p {
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 10px; 
+}
+
+.text {
+  width: 872px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.gray-box {
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #f3f3f3;
+}
+
+.gray-box:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.gray-box .text {
   width: 692px;
   margin-bottom: 10px;
 }
 
-.grey-block:last-of-type {
-  margin: 0;
+.list {
+  margin-left: 15px;
 }
 
-.grey-block:last-of-type p {
-  margin-bottom: 0;
-}
-
-.figure {
-  display: inline-block;
-  margin-bottom: 40px;
-  width: 872px;
+.item:not(:last-child) {
+  margin-bottom: 20px;
 }
