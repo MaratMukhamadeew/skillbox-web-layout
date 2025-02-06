@@ -58,7 +58,7 @@ figure {
   font-weight: 700;
   font-size: 18px;
   color: #3f2aff;
-  padding: 30px;
+  padding-left: 30px;
   background-image: url("/img/download.png");
   background-position: left center;
   background-size: 20px 20px;
@@ -125,6 +125,7 @@ figure {
 .gray-box {
   border-radius: 20px;
   padding: 30px;
+  background-size: contain;
   background-color: #f3f3f3;
   background-position: right center;
   background-repeat: no-repeat;
@@ -149,7 +150,8 @@ figure {
 }
 
 .list {
-  margin-left: 15px;
+  margin: 0;
+  padding-left: 15px;
 }
 
 .link-item {
